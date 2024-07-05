@@ -5,7 +5,6 @@ body {
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  border: 3px solid red;
   background-color: rgb(39, 124, 163);
   align-items: center;
   padding: 10px;

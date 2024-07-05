@@ -1,20 +1,16 @@
-
 .footer {
-    display: flex;
-    border: solid 1px red;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 4px;
-    color: white;
-    width: 100%;
-    position: fixed; 
-    bottom: 0; 
-
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 4px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(111, 111, 204);
 }
-.logo img{  
-    height: 35px;
-    width: 35px;
-
+.logo img {
+  height: 35px;
+  width: 35px;
 }
