@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Task from "./Task";
 const KanbanBoard = () => {
   const [tasks, setTasks] = useState([
     {
@@ -43,15 +44,7 @@ const KanbanBoard = () => {
   return (
     <div>
       {tasks.map((task) => (
-        <div key={task.id}>
-          <h3>{task.title}</h3>
-
-          <p>{task.description}</p>
-          <p>
-            Task Status: {task.isCompleted ? "Completed✅" : "❌Not Completed"}
-          </p>
-          <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
-        </div>
+        <Task key={task.id} task={task} handleDeleteTask={handleDeleteTask}/>
       ))}
     </div>
   );
