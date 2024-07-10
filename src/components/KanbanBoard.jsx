@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Task from "./Task";
+import "./KanbanBoard.css";
 const KanbanBoard = () => {
   const [tasks, setTasks] = useState([
     {
@@ -35,20 +36,19 @@ const KanbanBoard = () => {
     },
   ]);
 
-
-
   const handleDeleteTask = (taskId) => {
-    setTasks(tasks.filter(task => task.id !== taskId));
+    setTasks(tasks.filter((task) => task.id !== taskId));
   };
 
   return (
-    <div>
+    <div className="canban-board">
       {tasks.map((task) => (
-        <Task key={task.id} task={task} handleDeleteTask={handleDeleteTask}/>
+        <div key={task.id} className="tasks">
+          <Task task={task} handleDeleteTask={handleDeleteTask} />{" "}
+        </div>
       ))}
     </div>
   );
 };
-
 
 export default KanbanBoard;
