@@ -2,11 +2,11 @@ import React from "react";
 import KanbanBoard from "./components/KanbanBoard";
 import "./HomePage.css";
 
-const HomePage = () => {
+const HomePage = ({ tasks, handleDeleteTask }) => {
   return (
     <div className="container">
       <div className="content-container">
-        <KanbanBoard />
+        <KanbanBoard tasks={tasks} handleDeleteTask={handleDeleteTask} />
       </div>
     </div>
   );
