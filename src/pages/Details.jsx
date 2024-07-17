@@ -11,11 +11,13 @@ const Details = ({tasks}) => {
   }
   return (
     <div className='container'>
+      
       <h1>{task.title}</h1>
       <p>{task.description}</p>
       <p>Status: {task.isCompleted ? "Completed ✅" : "❌ Not Completed"}</p>
-      </div>  )
+    </div>
+  )
 }
 
 export default Details
-// new codes after here 
+//// akasksdaksad

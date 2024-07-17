@@ -1,33 +1,38 @@
 [
-    {
-      "id": 1,
-      "title": "Task 1",
-      "description": "Description for Task 1",
-      "isCompleted": false
-    },
-    {
-      "id": 2,
-      "title": "Task 2",
-      "description": "Description for Task 2",
-      "isCompleted": true
-    },
-    {
-      "id": 3,
-      "title": "Task 3",
-      "description": "Description for Task 3",
-      "isCompleted": false
-    },
-    {
-      "id": 4,
-      "title": "Task 4",
-      "description": "Description for Task 4",
-      "isCompleted": true
-    },
-    {
-      "id": 5,
-      "title": "Task 5",
-      "description": "Description for Task 5",
-      "isCompleted": false
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Task 1",
+    "description": "Description for Task 1",
+    "isCompleted": false,
+    "notes": "Example notes"
+  },
+  {
+    "id": 2,
+    "title": "Task 2",
+    "description": "Description for Task 2",
+    "isCompleted": true,
+    "notes": "Example notes1"
+    
+  },
+  {
+    "id": 3,
+    "title": "Task 3",
+    "description": "Description for Task 3",
+    "isCompleted": false,
+    "notes": "Example notes"
+  },
+  {
+    "id": 4,
+    "title": "Task 4",
+    "description": "Description for Task 4",
+    "isCompleted": true,
+    "notes": "Example notes"
+  },
+  {
+    "id": 5,
+    "title": "Task 5",
+    "description": "Description for Task 5",
+    "isCompleted": false,
+    "notes": "Example notes"
+  }
+]
