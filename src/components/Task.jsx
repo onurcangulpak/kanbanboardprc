@@ -16,7 +16,7 @@ const Task = ({ task, handleDeleteTask}) => {
         Task Status: {task.isCompleted ? "Completed ✅" : "❌ Not Completed"}
       </p>
 
-      <Link to={`/details/${task.id}`}>View Details</Link>
+      <Link to={`/details/${task.id}`}>Edit</Link>
       <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
       <button></button>
     </div>

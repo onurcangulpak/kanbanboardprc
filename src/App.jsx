@@ -25,7 +25,7 @@ const App = () => {
         <SideBar />
         <Routes>
           <Route path="/" element={<HomePage tasks={tasks} setTasks={setTasks} handleDeleteTask={handleDeleteTask} />}/>
-          <Route path="/details/:taskId" element={<Details tasks={tasks} />} />
+          <Route path="/details/:taskId" element={<Details tasks={tasks} setTasks={setTasks} />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/kanban" element={ <TaskContainer tasks={tasks} setTasks={setTasks} handleDeleteTask={handleDeleteTask} />}/>
           <Route path="*" element={<NotFound />} />

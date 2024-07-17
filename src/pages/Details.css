@@ -1,6 +1,14 @@
-.container { 
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin-left: 10px;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-left: 10px;
+}
+.container form {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5px 5px;
+  padding: 5px 5px;
 }

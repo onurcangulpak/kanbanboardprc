@@ -34,13 +34,14 @@ const CreateTask = ({ tasks, setTasks }) => {
           <option value="not-completed">Not Completed </option>
         </select>
         <label>Description: </label>
+       
         <input
           type="text"
           required
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <button>Add task</button>
+        <button type="submit">Add task</button>
         {/* <p> {title} {notes} {station}</p> */}
       </form>
     </div>
