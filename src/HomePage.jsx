@@ -8,6 +8,7 @@ const HomePage = ({ tasks, handleDeleteTask }) => {
       <div className="content-container">
         <KanbanBoard tasks={tasks} handleDeleteTask={handleDeleteTask} />
       </div>
+     
     </div>
   );
 };

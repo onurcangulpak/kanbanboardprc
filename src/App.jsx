@@ -10,15 +10,11 @@ import Footer from "./components/Footer";
 import SideBar from "./components/SideBar";
 import OneTask from "./components/OneTask";
 import KanbanBoard from "./components/KanbanBoard";
+import FormXx from "./components/FormXx"
+import taskData from "./assets/Data/data.json"
 
 const App = () => {
-  const [tasks, setTasks] = useState([
-    { id: 1, title: "Task 1", description: "Description for Task 1", isCompleted: false },
-    { id: 2, title: "Task 2", description: "Description for Task 2", isCompleted: true },
-    { id: 3, title: "Task 3", description: "Description for Task 3", isCompleted: false },
-    { id: 4, title: "Task 4", description: "Description for Task 4", isCompleted: true },
-    { id: 5, title: "Task 5", description: "Description for Task 5", isCompleted: false },
-  ]);
+  const [tasks, setTasks] = useState(taskData);
 
   const handleDeleteTask = (taskId) => {
     setTasks(tasks.filter((task) => task.id !== taskId));
@@ -29,6 +25,7 @@ const App = () => {
       <NavBar />
       <div className="content-container">
         <SideBar />
+      
         <Routes>
           <Route
             path="/"
@@ -44,8 +41,10 @@ const App = () => {
               <KanbanBoard tasks={tasks} handleDeleteTask={handleDeleteTask} />
             }
           />
+          
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <FormXx/>
       </div>
       <Footer />
     </Router>

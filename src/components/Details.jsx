@@ -18,3 +18,4 @@ const Details = ({tasks}) => {
 }
 
 export default Details
+// new codes after here 
