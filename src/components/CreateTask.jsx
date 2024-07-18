@@ -15,7 +15,7 @@ const CreateTask = ({ tasks, setTasks }) => {
   };
 
   return (
-    <div className="form-container">
+    <div className="add-task-container">
       <h2>Add a new task</h2>
       <form onSubmit={handleSubmit}>
         <label>Task title:</label>
@@ -34,15 +34,15 @@ const CreateTask = ({ tasks, setTasks }) => {
           <option value="not-completed">Not Completed </option>
         </select>
         <label>Description: </label>
-       
+      
         <input
           type="text"
           required
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
+      
         <button type="submit">Add task</button>
-        {/* <p> {title} {notes} {station}</p> */}
       </form>
     </div>
   );

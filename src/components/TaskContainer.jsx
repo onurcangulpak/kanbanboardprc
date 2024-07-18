@@ -12,7 +12,6 @@ const KanbanBoard = ({ tasks, handleDeleteTask }) => {
       ))}
      
     </div>
-    
   );
 };
 

@@ -1,0 +1,9 @@
+.task-container { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+    border: 1px solid #ccc;
+    padding: 12px;
+
+}
